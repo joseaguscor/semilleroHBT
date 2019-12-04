@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from '@angular/router';
 
 /**
  * @description La clase es para aprender a crear componentes y practicar
@@ -17,15 +18,27 @@ import { Component, OnInit } from "@angular/core";
 
 export class PrimerComponent implements OnInit {
 
-    //Variables
-    public minombre: string;
+/**
+ * @description Contanenar dos variables string
+ * @autor José Gómez Flórez
+ */
+    public minombre: string = "José Gómez Flórez ";
+    public ciudad: string = "- Montería";
 
-    constructor(){
+    public misdatos: string = this.minombre.concat(this.ciudad);
+
+    
+
+    /**
+   * Constructor de la clase
+   * @param router permite direccionar a otros componentes
+   */
+    constructor(private router: Router) {
 
     }
 
     ngOnInit(): void {
-       
+
     }
 
 }
