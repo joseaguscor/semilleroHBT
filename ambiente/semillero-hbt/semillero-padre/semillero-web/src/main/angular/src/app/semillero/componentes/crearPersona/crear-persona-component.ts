@@ -7,9 +7,10 @@ import { ComicDTO } from '../../dto/comic.dto';
  */
 @Component({
     selector: 'crear-persona',
-    templateUrl: './crear-persona-component.html'
+    templateUrl: './crear-persona-component.html' // indicar que use el documento html
+    //styleUrls: ['./crear-persona-component.css']  // indicar que use la hoja de estilos
 })
-export class CrearPersonaComponent implements OnInit{
+export class CrearPersonaComponent implements OnInit{ // sintaxis de cada componente
     
     private nombreInstructorGlobalPrivado : string;
     public nombreInstructorGlobalPublic : string;
